@@ -39,12 +39,22 @@ h2 {
 
 /* end globals */
 
-.container {
+.fullwidth {
     width: 1440px;
     margin: auto;
+}
+
+.background__header {
     background-color: var(--dark-background);
 }
 
+.background__section3 {
+    background-color: var(--third-color);
+}
+
+.background__footer {
+    background-color: var(--dark-background);
+}
 
 /* header: */
 .header {
@@ -54,6 +64,7 @@ h2 {
     margin: auto;
     height: 36px;
     width: 1040px;
+    background-color: var(--dark-background);
 
 
     .header__logo {
@@ -78,6 +89,7 @@ h2 {
     height: 500px;
     width: 1040px;
 }
+
 
 .section-1 {
     background-color: var(--dark-background);
@@ -251,4 +263,7 @@ h2 {
     margin: auto;
     color: var(--third-color);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
