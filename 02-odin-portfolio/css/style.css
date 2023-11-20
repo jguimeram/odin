@@ -209,11 +209,11 @@ h2 {
 .section-4 {
     width: 1040px;
     height: 350px;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: var(--second-color);
 }
 
 .section4__action {
