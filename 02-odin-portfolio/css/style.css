@@ -1,0 +1,254 @@
+/* globals */
+
+
+:root {
+    --dark-background: #1F2937;
+    --second-color: #F9FAF8;
+    --third-color: #E5E7EB;
+    --call-action: #3882F6;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+/* end globals */
+
+.container {
+    width: 1440px;
+    margin: auto;
+    background-color: var(--dark-background);
+}
+
+
+/* header: */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 36px;
+    width: 1040px;
+
+
+    .header__logo {
+        font-size: 24px;
+        color: var(--second-color);
+        font-weight: bold;
+    }
+
+    .header__menu {
+
+        .header__link {
+            color: var(--third-color);
+            font-size: 18px;
+            padding: 1rem;
+            margin-top: 1.5rem;
+        }
+    }
+
+}
+
+.section {
+    height: 500px;
+    width: 1040px;
+}
+
+.section-1 {
+    background-color: var(--dark-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+/* hero */
+
+.hero {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 240px;
+
+    .hero__text {
+        flex: 1 1 50%;
+        text-align: left;
+    }
+
+    .hero__placeholder {
+        flex: 1 1 50%;
+        align-items: center;
+        color: var(--third-color);
+        background-color: gray;
+        height: 100%;
+
+    }
+
+    .hero__placeholder p {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .hero__main h1 {
+        font-weight: bolder;
+        color: var(--second-color);
+        margin: 0;
+    }
+
+    .hero__secondary__p {
+        font-size: 18px;
+        color: var(--third-color);
+    }
+
+
+    .hero__button {
+        width: 130px;
+        height: 40px;
+        background-color: var(--call-action);
+        color: white;
+        border: 0px;
+        border-radius: 5px;
+    }
+
+}
+
+/** section 2 **/
+
+.section-2 {
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .section2__title {
+        color: var(--dark-background);
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .section2__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        column-gap: 50px;
+    }
+
+    .card {
+        width: 168px;
+    }
+
+    .card__placeholder {
+        width: 168px;
+        height: 168px;
+        border: 5px solid var(--call-action);
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    .card__text {
+        text-align: center;
+        color: gray;
+    }
+
+}
+
+
+.section-3 {
+    background-color: var(--third-color);
+    color: var(--dark-background);
+    margin: auto;
+
+}
+
+.section3__quote {
+    padding: 5rem;
+}
+
+.section3__text {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 36px;
+}
+
+
+.section3__smalltext {
+    text-align: right;
+    font-size: 1rem;
+}
+
+.section-4 {
+    width: 1040px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--second-color);
+}
+
+.section4__action {
+    width: 1024px;
+    height: 140px;
+    border-radius: 5px;
+    margin: auto;
+    color: var(--second-color);
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--call-action);
+    align-items: center;
+}
+
+.section4__title {
+    margin: 0 auto;
+}
+
+.section4__disclaimer {
+    margin-top: 0px;
+}
+
+.section4__signup--button {
+    background-color: var(--call-action);
+    color: var(--second-color);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+
+.footer {
+    width: 1020px;
+    height: 100px;
+    margin: auto;
+    color: var(--third-color);
+    text-align: center;
+}
